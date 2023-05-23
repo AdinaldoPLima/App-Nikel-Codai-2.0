@@ -64,7 +64,7 @@ function getTransactions() {
     let transactionHtml =``;
 
     if(transaction.length) {
-        transaction.forEach((item) =>{
+        transaction.forEach((item) => {
             let type = "Entrada";
 
             if(item.type ==="2") {
@@ -79,7 +79,7 @@ function getTransactions() {
                 <td>${item.description}</td>
             </tr>
             `
-        })
+        });
     }
 
     document.getElementById("transaction-list").innerHTML = transactionHtml;
